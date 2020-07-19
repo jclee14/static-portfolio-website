@@ -1,0 +1,312 @@
+body{
+    height: 4000px;
+    background-image: linear-gradient(#FFFF00 1000px, black 3000px);
+    background-image: -webkit-linear-gradient(#FFFF00 1000px, black 3000px);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+#mainCon {
+    min-height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    padding: 50px 0px;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-height: 700px) {
+    .navbar-default {
+        padding: 20px 0;
+    }
+}
+
+.nav.navbar-nav li a {
+    color:black;
+    font-family: "Futura PT Bold", sans-serif;
+    font-size: 25px;
+}
+
+@media only screen and (min-width: 1149px) and (max-width: 1200px) {
+    .nav li a {
+        padding: 15px 1.25vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1148px) {
+    .nav.navbar-nav li a {
+        font-size: 2.7vw;
+    }
+
+    .nav li a {
+        padding: 15px 3px;
+    }
+}
+
+.nav.navbar-nav li {
+    padding: 0px 15px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+    border: 0;
+}
+
+.navbar-toggle {
+    background-color: black;
+    color: white;
+    float: none;
+    margin: 0;
+}
+
+.navbar-header button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 0;
+}
+
+.navbar-header button span.glyphicon {
+    font-size: 200%;
+    vertical-align: middle;
+}
+
+#myNavbar {
+    margin: 20px 0;
+}
+
+.active-nav {
+    color: white !important;
+    text-shadow: 3px 3px black;
+}
+
+@media only screen and (max-width: 767px) {
+    .active-nav {
+        color: white !important;
+        text-shadow: none;
+    }
+    .active-nav-bg {
+        background-color: black !important;
+    }
+    .nav.navbar-nav li a span {
+        background-color: white;
+    }
+}
+
+#nameTitle {
+    position: absolute;
+    width: 100vw;
+    height: 300px;  
+    text-align: center;
+    max-width: 100%;
+}
+
+#nameTitle img {
+    pointer-events: none;
+}
+
+.name-wrapper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.center {
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 150px;
+}
+
+@media only screen and (max-width: 767px) {
+    .center {
+        width: 70vw;
+        height: auto;
+    }
+}
+
+#homeCover {
+    background-image: url("../img/000070.JPG");
+    height: 300px;    
+    background-repeat: no-repeat;
+	background-position: 65% 35%;
+	background-size: cover;
+    background-attachment: fixed;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+#deeper {
+    padding: 400px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Fade-in animation*/
+.slideanim {
+    visibility: hidden;
+}
+
+.slideanim h2 {
+    font-family: "Futura PT Bold Oblique", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .slideanim h2 {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+.slideUp {
+  /* The name of the animation */
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp; 
+  /* The duration of the animation */
+  animation-duration: 1.8s; 
+  -webkit-animation-duration: 1.8s;
+  /* Make the element visible */
+  visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  } 
+}
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+#welcomeTxt {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#welcomeTxt h2 {
+    color: black;
+    font-family: "Futura PT Bold Oblique", sans-serif;
+    font-size: 50px;
+}
+
+@media only screen and (max-height: 700px) {
+    #welcomeTxt h2 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #sub-welcomeTxt {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #sub-welcomeTxt {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+.bgText {
+    position: absolute;
+    width: 100vw;
+    height: 500px;
+    max-width: 100%;
+    top: 200px;
+    z-index: -1;
+}
+
+.bgText h5 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40vw;
+    opacity: 0.02;
+    line-height: 1;
+    margin: 0;
+}
+
+@media only screen and (min-width: 1250px) {
+    .bgText h5 {
+        font-size: 40vw;
+    }
+}
+
+.eyeColor {
+    background-color: white;
+    color: black;
+}
+
+.navbar-toggle:hover {
+    background-color: orange !important;
+}
+
+#myNavbar li a:before{
+    content: '';
+    width: 0px;
+    position: absolute;
+    border-bottom: 5px solid #313131;
+    bottom: 0;
+    transition: 0.5s all;
+  }
+
+#myNavbar li a:hover:before{
+    width: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}

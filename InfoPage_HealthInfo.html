@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>J.C. Lee | Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="assets/fonts/bebas-neue-cufonfonts-webfont/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="assets/fonts/futura-condensed-pt-cufonfonts-webfont/style.css" type="text/css" charset="utf-8" />
+
+    <link rel="stylesheet" href="assets/css/ProjectInfoPage.css">
+</head>
+
+<body>
+    <div id="exit-Container">
+        <a href="ProjectPage.html" alt="exit"><span class="glyphicon glyphicon-remove"></span></a>
+    </div>
+
+    <div>
+        <img id="work" src="assets/img/WORK.png">
+    </div>
+
+    <iframe class="ytplayer" type="text/html" 
+        src="https://www.youtube.com/embed/DTp9ylkW-gk?" frameborder="0" 
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"
+        allowfullscreen="allowfullscreen">
+    </iframe>
+
+    <iframe class="ytplayer disable" type="text/html" 
+        src="https://www.youtube.com/embed/3k1TBpaGTag?" frameborder="0" 
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"
+        allowfullscreen="allowfullscreen">
+    </iframe>
+
+    <h3 class="instructor">(Select below episode for changing)</h3>
+
+    <div class="project-modal-container modal-con-2w">
+        <div class="project-modal modal-2w">
+            <a>
+                <img class="active-modal" src="assets/img/ProjectCover/Cover_Health3_1.jpg" alt="Healthcare Info 1">
+            </a>
+        </div>
+        <div class="project-modal modal-2w">
+            <a>
+                <img src="assets/img/ProjectCover/Cover_Health2_1.jpg" alt="Healthcare Info 2">                
+            </a>            
+        </div>      
+    </div>
+
+    <div id="description" class="row">
+        <div id="title-container" class="long-title-container">
+            <div id="title" class="long-title">
+                <h1>Healthcare Infographic<span class="titleBG"></span></h1>
+            </div>
+        </div>
+
+        <div id="explain" class="col-md-6">
+            <p>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                When I did a freelance job with my friends, we got an opportunity from a government organization 
+                to create a 2D infographic for educating Thai and Myanmar people in my city about the information 
+                of diseases in a kid. This was why we picked the easy-watching visual to be the main subject and 
+                used it to drive all the components in this project. The graphic linked the relationship 
+                between kid and parent and convinced an audience to follow the instructions by parent instinct. 
+                In addition, the processes were not complex as we thought first, but the challenge was the 3 episodes 
+                of animation with limited working time. At last, we could deliver this project to the client on 
+                the appropriate time.
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <div id="detail">
+                <div>
+                    <h2>{Freelance} Project</h2>
+                    <h2>2D Animation</h2>
+                </div>
+                <div>
+                    <h2 class="topicStyle">Year :</h2>
+                    <h2>2018</h2>
+                </div>
+                <div>
+                    <h2 class="topicStyle">Roles :</h2>
+                    <h2>Co-Director / Animator</h2>
+                    <h2>Sound Effects Composer</h2>
+                </div>
+
+                <img id="rbCorner" src="assets/img/RB_Corner.png" class="noselect">
+            </div>
+        </div>
+
+    </div>
+
+<script>
+    $(document).ready(function(){
+
+        var modal = document.getElementsByClassName("project-modal-container")
+        var proM = document.getElementsByClassName("project-modal");
+        var proImg = modal[0].getElementsByTagName("IMG");
+        var vid = document.getElementsByTagName("IFRAME");
+
+        proM[0].onclick = function() {
+            addClass(0);
+            removeClass(0);
+            hideVid(0);
+        }
+        proM[1].onclick = function() {
+            addClass(1);
+            removeClass(1);
+            hideVid(1);
+        }
+
+        function addClass(element) {
+            var i;
+            for (i=0 ; i<2 ; i++) {
+                if(i==element) {
+                    proImg[i].classList.add("active-modal");                    
+                }
+            }
+        }
+
+        function removeClass(element) {
+            var i;
+            for (i=0 ; i<2 ; i++) {
+                if(i!==element) {
+                    proImg[i].classList.remove("active-modal");
+                }
+            }
+        }
+
+        function hideVid(element) {
+            var i;
+            for(i=0 ; i<2 ; i++) {
+                if(i!==element) {
+                    vid[i].classList.add("disable");
+                    vid[i].src += '';
+                } else {
+                    vid[i].classList.remove("disable");
+                }
+            }
+        }
+    })
+</script>
+
+</body>
+
+</html>

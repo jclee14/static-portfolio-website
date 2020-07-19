@@ -1,0 +1,317 @@
+body {
+    background-color: #FFFF00;
+}
+
+nav {
+    z-index: 1;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    padding: 50px 100px;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-default {
+        padding: 50px 15% 30px;
+    }
+}
+
+.nav.navbar-nav li a {
+    color:black;
+    font-family: "Futura PT Bold Oblique", sans-serif;
+    font-size: 2.2vw;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav.navbar-nav li a {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1136px) {
+    .nav.navbar-nav li a {
+        font-size: 25px;
+    }
+}
+
+.navbar-header a {
+    color:black !important;
+    font-family: "Futura PT Bold Oblique", sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 767px) {
+    #myNavbar {
+        border: none;
+        float: right;
+        text-align: right;
+    }
+}
+
+.navbar-brand {
+    padding-left: 0;
+}
+
+.navbar-brand:hover {
+    text-shadow: 3px 3px white;
+}
+
+.navbar-toggle {
+    background-color: black;
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.eyeColor {
+    background-color: black;
+    color: white;
+}
+
+.navbar-toggle:hover {
+    background-color: orange !important;
+}
+
+#myNavbar li a:before{
+    content: '';
+    width: 0px;
+    position: absolute;
+    border-bottom: 5px solid #313131;
+    bottom: 0;
+    transition: 0.5s all;
+  }
+
+#myNavbar li a:hover:before{
+    width: 30px;
+}
+
+.active-nav {
+    color: white !important;
+    text-shadow: 3px 3px black;
+}
+
+@media only screen and (max-width: 767px) {
+    .active-nav {
+        color: white !important;
+        text-shadow: none;
+    }
+    .active-nav-bg {
+        background-color: black !important;
+    }
+    .nav.navbar-nav li a span {
+        background-color: white;
+    }
+}
+
+.pad0 {
+    padding: 0;
+}
+
+#rCorner {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    width: 30px;
+    height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    #rCorner {
+        visibility: hidden;
+    }
+}
+
+#who {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 600px;
+    height: auto;
+}
+
+#profilePic {
+    text-align: center;
+    z-index: -1;
+}
+
+#profilePic img {
+    width: 80vw;
+    height: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+    #profilePic {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+    }
+
+    #profilePic img {
+        height: 75vh;
+        width: auto;
+        max-height: 50vw;
+        margin-left: 5vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    #profilePic img {
+        width: 614.4px;
+    }
+}
+
+.row {
+    margin: 0;
+    color: black;
+}
+
+@media only screen and (min-width: 1200px) {
+    .row {
+        margin-bottom: 50px;
+    }
+}
+
+p {
+    font-family: "Futura PT Book Oblique", sans-serif;
+    font-size: 18px;
+    background-color: transparent;
+    border: 0;
+    text-align: justify;
+}
+
+.glyphicon-star {
+    font-size: 20px;
+}
+
+.bioHead {
+    font-family: "Futura PT Bold Oblique", san-serif !important;
+}
+
+#bio {
+    padding-top: 15vw;
+    padding-left: 100px;
+    padding-right: 20%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    #bio{
+        padding-top: 0;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #bio{
+        padding-top: 0;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 0;
+    }
+}
+
+#bio p {
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 1200px) {
+    #info {
+        padding-top: 100px;
+        padding-left: 20%;
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    #info {
+        padding-top: 50px;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 5%;
+    }
+}
+
+#info p {
+    font-family: "Futura PT Demibold Oblique", sans-serif !important;
+    font-size: 24px !important;
+    text-align: right !important;
+}
+
+@media only screen and (max-width: 1199px) {
+    #info p{
+        text-align: center !important;
+    }
+
+    #job div {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #job div {
+        width: 100%;
+        margin-bottom: 8%;
+    }
+}
+
+#lineArt {
+    position: fixed;
+    background-image: linear-gradient(#FFFF00, white);
+    background-image: -webkit-linear-gradient(#FFFF00, white);
+    height: 60%;
+    width: 15px;
+    bottom: 0;
+    right: 30%;
+    z-index: -2;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    #freelance{
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #skill{
+        padding-top: 200px;
+    }
+
+    #skillChild {
+        padding-top: 50px;
+    }
+
+    #freelance {
+        padding-top: 50px;
+    }
+}
+
+.lineStyle {
+    float: right;
+    display: block;
+    background-color: black;
+    width: 30px;
+    height: 5px;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}

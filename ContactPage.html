@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>J.C. Lee | Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="assets/fonts/bebas-neue-cufonfonts-webfont/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="assets/fonts/futura-condensed-pt-cufonfonts-webfont/style.css" type="text/css" charset="utf-8" />
+
+    <link rel="stylesheet" href="assets/css/ContactPage.css">
+</head>
+
+<body>
+    <div class="container-fluid pad0">
+    
+        <nav class="navbar navbar-default noselect">
+            <div class="container-fluid pad0">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">JC</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="AboutPage.html"><span>About</span></a></li>
+                        <li><a href="ProjectPage.html"><span>Projects</span></a></li>
+                        <li><a href="AchievementPage.html"><span>Achievement</span></a></li>
+                        <li><a href="ContactPage.html" class="active-nav"><span class="active-nav-bg">Contact</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="overbg"></div>
+
+        <div class="bg-container">
+            <div class="topic noselect">
+                <h1>CONTACT</h1>                
+            </div>
+            <div class="bg">
+                <a href="mailto:jiapsuic@gmail.com" target="_blank" class="email-link"><h2>jiapsuic@gmail.com</h2></a>
+                <a href="tel:+66894633435" target="_blank"><h2>+66 (0) 89 463 3435</h2></a>
+            </div>            
+        </div>
+
+    </div>
+
+<script>
+    $(document).ready(function(){
+        $(".navbar-toggle").click(function() {
+            $(this).toggleClass("toggleColor");
+            if( $(this).hasClass("toggleColor") ) {
+                $(".navbar-toggle:focus").css("background-color", "black");
+            }
+        });
+    })
+</script>
+
+</body>
+
+</html>

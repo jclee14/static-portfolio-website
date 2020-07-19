@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>J.C. Lee | Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="assets/fonts/bebas-neue-cufonfonts-webfont/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="assets/fonts/futura-condensed-pt-cufonfonts-webfont/style.css" type="text/css" charset="utf-8" />
+
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+
+    <div id="mainCon" class="container-fluid">
+        <nav class="navbar navbar-default noselect">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span id="eyeIcon" class="glyphicon glyphicon-eye-close"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html" class="active-nav"><span class="active-nav-bg">HOME</span></a></li>
+                        <li><a href="AboutPage.html"><span>ABOUT</span></a></li>
+                        <li><a href="ProjectPage.html"><span>PROJECTS</span></a></li>
+                        <li><a href="AchievementPage.html"><span>ACHIEVEMENT</span></a></li>
+                        <li><a href="ContactPage.html"><span>CONTACT</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="nameTitle" class="noselect">
+            <span class="name-wrapper"></span>
+            <img src="assets/img/jc-lee.png" alt="name" class="center">
+        </div>
+
+        <div id="homeCover"></div>
+
+        <div class="container-fluid" style="padding: 0;">
+            <div id="welcomeTxt" class="jumbotron">
+                <div id="sub-welcomeTxt" class="noselect">
+                    <h2>"</h2>
+                    <h2 class="text-center">NOTHING HARDER THAN THIS</h2>
+                    <h2 class="text-center">NOTHING BETTER THAN THIS</h2>
+                    <h2 class="text-right">"</h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="deeper" class="container-fluid">
+            <div class="jumbotron slideanim noselect">
+                <h2>DEEPER THAN EVER</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function() {
+                $(".slideanim").each(function(){
+
+                    var pos = $(this).offset().top;
+                    var winTop = $(window).scrollTop();
+
+                    if (pos < winTop + 550) {
+                        $(this).addClass("slideUp");
+                    }
+                });
+            });
+
+            $(".navbar-toggle").click(function() {
+                $(this).toggleClass("eyeColor");
+                if( $(this).hasClass("eyeColor") ) {
+                    $(".navbar-toggle:focus").css("background-color", "white");
+                } else {
+                    $(".navbar-toggle:focus").css("background-color", "black");
+                }
+            });
+
+            $(".navbar-toggle").click(function() {
+                $("#eyeIcon").toggleClass("glyphicon-eye-close").toggleClass("glyphicon-eye-open");
+            });
+        })
+    </script>
+
+</body>
+
+</html>

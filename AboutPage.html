@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>J.C. Lee | About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="assets/fonts/bebas-neue-cufonfonts-webfont/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="assets/fonts/futura-condensed-pt-cufonfonts-webfont/style.css" type="text/css" charset="utf-8" />
+
+    <link rel="stylesheet" href="assets/css/AboutPage.css">
+</head>
+
+<body>
+    <div class="container-fluid pad0">
+        <nav class="navbar navbar-default noselect">
+            <div class="container-fluid pad0">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">JC</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="AboutPage.html" class="active-nav"><span class="active-nav-bg">About</span></a></li>
+                        <li><a href="ProjectPage.html"><span>Projects</span></a></li>
+                        <li><a href="AchievementPage.html"><span>Achievement</span></a></li>
+                        <li><a href="ContactPage.html"><span>Contact</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+            <img id="rCorner" src="assets/img/R_Corner.png" class="noselect">
+            <img id="who" src="assets/img/WHO.png" class="noselect">
+        </div>
+
+           
+        <div id="lineArt" class="noselect"></div>
+
+        <div class="row">
+            <div id="bio" class="col-lg-6">
+                <div>
+                    <h3 class="bioHead">My name is Supawit Charoenwetch.</h>
+                    <h3 class="bioHead display-inline">Just call me "Jia"</h3>
+                    &nbsp
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+                </br>
+                <p>
+                    I am a graduated digital media student
+                    from Prince of Songkla University
+                    International College, Hatyai, Thailand.
+                </br></br>
+                    Creativity is the key that I use to drive my life. 
+                    I love to create meaningful and productive project. 
+                    Furthermore, I extremely enjoy working as a
+                    team because the energetic atmosphere and idea-sharing 
+                    are the best parts of my working life. Previously, 
+                    most of my projects were animations and films. 
+                    However, my interest changed to the technology-business industry, hence, presently, 
+                    I am self-studying about web-development,
+                    both in front and back ends sections. 
+                    By combining imagination and technology knowledge, 
+                    I intend to achieve my life goal which 
+                    is to create an efficiency solution
+                    for the problem of our society.
+                </p>
+            </div>
+
+            <div id="info" class="col-lg-6">
+                <div id="job">
+                    <div id="webDev">
+                        <p>Web - developer</p>
+                        <p>Junior</p>
+                    </div>
+                    <div id="freelance">
+                        <p>Multi - Media</p>
+                        <p>Freelancer</p>
+                    </div>
+                </div>
+
+                <div id="skill">
+                    <div id="line" class="noselect"></div>
+                    <div id="skillChild">
+                        <p>25 Years Old</p>
+                        <p>Moderate English Skill</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="profilePic" class="noselect">
+            <img src="assets/img/Profile_JC-02.png">
+        </div> 
+
+    </div>
+
+<script>
+    $(document).ready(function(){
+        $(window).resize(function() {
+
+            let sWidth = $(window).width();
+
+            if(sWidth >= 1200) {
+                $("#line").addClass("lineStyle");
+            } else {
+                $("#line").removeClass("lineStyle");
+            }
+        });
+
+        $(".navbar-toggle").click(function() {
+            $(this).toggleClass("eyeColor");
+            if( $(this).hasClass("eyeColor") ) {
+                $(".navbar-toggle:focus").css("background-color", "black");
+            }
+        });
+    })
+
+</script>
+
+</body>
+
+</html>

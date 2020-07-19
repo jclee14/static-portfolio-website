@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>J.C. Lee | Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="assets/fonts/bebas-neue-cufonfonts-webfont/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="assets/fonts/futura-condensed-pt-cufonfonts-webfont/style.css" type="text/css" charset="utf-8" />
+
+    <link rel="stylesheet" href="assets/css/ProjectInfoPage.css">
+</head>
+
+<body>
+    <div id="exit-Container">
+        <a href="ProjectPage.html" alt="exit"><span class="glyphicon glyphicon-remove"></span></a>
+    </div>
+
+    <div>
+        <img id="work" src="assets/img/WORK.png">
+    </div>
+
+<!--     <video controls loop id="mainVideo">
+        <source src="/assets/video/One_And_A_Half[Credited].mp4" type="video/mp4">
+    </video> -->
+
+    <iframe class="ytplayer" type="text/html" 
+        src="https://www.youtube.com/embed/jvQzohtuzsA?" frameborder="0" 
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"
+        allowfullscreen="allowfullscreen">
+    </iframe>
+
+    <iframe class="ytplayer disable" type="text/html" 
+        src="https://www.youtube.com/embed/GRC3aIWkq9o?" frameborder="0" 
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"
+        allowfullscreen="allowfullscreen">
+    </iframe>
+
+    <iframe class="ytplayer disable" type="text/html" 
+        src="https://www.youtube.com/embed/LncwEukEzcE?" frameborder="0" 
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"
+        allowfullscreen="allowfullscreen">
+    </iframe>
+
+    <h3 class="instructor">(Select below episode for changing)</h3>
+
+    <div class="project-modal-container modal-con-3w">
+        <div class="project-modal modal-3w">
+            <a>
+                <!-- <span></span> -->
+                <img class="active-modal" src="assets/img/ProjectCover/Cover_dent4_1.jpg" alt="Dental Music 1">
+            </a>
+        </div>
+        <div class="project-modal modal-3w">
+            <a>
+                <!-- <span class="yellow-modal"></span> -->
+                <img src="assets/img/ProjectCover/Cover_dent5_1.jpg" alt="Dental Music 2">                
+            </a>            
+        </div>
+        <div class="project-modal modal-3w">
+            <a>
+                <!-- <span class="yellow-modal"></span> -->
+                <img src="assets/img/ProjectCover/Cover_dent6_1.jpg" alt="Dental Music 3">
+            </a>
+        </div>        
+    </div>
+
+    <div id="description" class="row">
+        <div id="title-container">
+            <div id="title">
+                <h1>Dental Music Video<span class="titleBG"></span></h1>
+            </div>
+        </div>
+
+        <div id="explain" class="col-md-6">
+            <p>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Back to your childhood, had you ever got caries in your teeth? 
+                I assure that most of the kids in Thailand facing this huge health problem, 
+                because of them, especially their parents, lack of dental knowledge.
+            </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                This is the reason why faculty of dentistry, Prince of Songkla University, 
+                produced these useful and cute 2D animations for educating Thai people. 
+                Fortunately, my team participated in this project as a freelance artist. 
+                Our job was to create music videos from three provided songs, 
+                hence we chose 2D animation technique for this project, because it suited to our target, 
+                3-10 years kids. Our team wrote stories and animated lovely characters supported by one of my friend, 
+                and other elements. As a result, there were lots of feedback from both kids and parents 
+                that some of them could sing along the videos, and follow the dentist’s suggestion. 
+                This project is one of my favorite animation in my experience.
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <div id="detail">
+                <div>
+                    <h2>{Freelance} Project</h2>
+                    <h2>2D Animation</h2>
+                </div>
+                <div>
+                    <h2 class="topicStyle">Year :</h2>
+                    <h2>2017</h2>
+                </div>
+                <div>
+                    <h2 class="topicStyle">Roles :</h2>
+                    <h2>Co-Director / Animator</h2>
+                </div>
+
+                <img id="rbCorner" src="assets/img/RB_Corner.png" class="noselect">
+            </div>
+        </div>
+
+    </div>
+
+<script>
+    $(document).ready(function(){
+
+        var modal = document.getElementsByClassName("project-modal-container")
+        var proM = document.getElementsByClassName("project-modal");
+        var proImg = modal[0].getElementsByTagName("IMG");
+        /* var proSpan = modal[0].getElementsByTagName("SPAN"); */
+        var vid = document.getElementsByTagName("IFRAME");
+
+        proM[0].onclick = function() {
+            addClass(0);
+            removeClass(0);
+            hideVid(0);
+        }
+        proM[1].onclick = function() {
+            addClass(1);
+            removeClass(1);
+            hideVid(1);
+        }
+        proM[2].onclick = function() {
+            addClass(2);
+            removeClass(2);
+            hideVid(2);
+        }
+
+        function addClass(element) {
+            var i;
+            for (i=0 ; i<3 ; i++) {
+                if(i!==element) {
+                    /* proSpan[i].classList.add("yellow-modal"); */
+                } else {
+                    proImg[i].classList.add("active-modal");
+                }
+            }
+        }
+
+        function removeClass(element) {
+            var i;
+            for (i=0 ; i<3 ; i++) {
+                if(i!==element) {
+                    proImg[i].classList.remove("active-modal");
+                } else {
+                    /* proSpan[i].classList.remove("yellow-modal"); */
+                }
+            }
+        }
+
+        function hideVid(element) {
+            var i;
+            for(i=0 ; i<3 ; i++) {
+                if(i!==element) {
+                    vid[i].classList.add("disable");
+                    vid[i].src += '';
+                } else {
+                    vid[i].classList.remove("disable");
+                }
+            }
+        }
+    })
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,788 @@
+body {
+    background-color: #FFFF00;
+}
+
+body {
+    background-image: url("../img/achieve_cover2.jpg");
+    background-repeat: no-repeat;
+	background-position: 50% 0%;
+}
+
+#mainNav {
+    z-index: 1;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    padding: 50px 100px;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-default {
+        padding: 50px 15% 0;
+    }
+}
+
+.nav.navbar-nav li a {
+    color:black;
+    font-family: "Futura PT Bold Oblique", sans-serif;
+    font-size: 2.2vw;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav.navbar-nav li a {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1136px) {
+    .nav.navbar-nav li a {
+        font-size: 25px;
+    }
+}
+
+.navbar-header a {
+    color:black !important;
+    font-family: "Futura PT Bold Oblique", sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+}
+
+#myNavbar {
+    border: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    #myNavbar {
+        /* position: absolute; */
+        position: relative;
+        text-align: right;
+    }
+}
+
+.navbar-brand {
+    padding-left: 0;
+}
+
+.navbar-brand:hover {
+    text-shadow: 3px 3px white;
+}
+
+.navbar-toggle {
+    background-color: black;
+    border: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.toggleColor {
+    background-color: black;
+    color: white;
+}
+
+.navbar-toggle:hover {
+    background-color: orange !important;
+}
+
+#myNavbar li a:before{
+    content: '';
+    width: 0px;
+    position: absolute;
+    border-bottom: 5px solid #313131;
+    bottom: 0;
+    transition: 0.5s all;
+}
+
+#myNavbar li a:hover:before{
+    width: 30px;
+}
+
+.active-nav {
+    color: white !important;
+    text-shadow: 3px 3px black;
+}
+
+@media only screen and (max-width: 767px) {
+    .active-nav {
+        color: white !important;
+        text-shadow: none;
+    }
+    .active-nav-bg {
+        background-color: black !important;
+    }
+    .nav.navbar-nav li a span {
+        background-color: white;
+    }
+}
+
+#coverContainer {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+#achieveCover {
+    width: 100%;
+    height: auto;
+}
+
+#gallery-container {
+    position: relative;
+    /* margin-top: calc((100vw * 0.67) - 200px); */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15%;
+}
+
+.gallery li {
+    position: relative;
+    margin: 0vw 0vw 2vw 0vw;
+    cursor: pointer;
+}
+
+.gallery li {
+    width: calc(100% / 3 - (29 / 1440 * 100vw) * 2 / 3) ;
+}
+
+@media only screen and (min-width: 768px) {
+    .gallery li:not(:nth-child(3n)) {
+        margin: 0vw 2vw 2vw 0vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .gallery li {
+        width: calc(50% - (30 / 750 * 100vw) / 2);
+        margin: 0vw 0vw 4vw 0vw;
+    }
+
+    .gallery li:not(:nth-child(2n)) {
+        margin: 0vw 4vw 4vw 0vw;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.gallery li img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-filter 0.2s ease;
+    transition: -webkit-filter 0.2s ease;
+    transition: filter 0.2s ease;
+    transition: filter 0.2s ease, -webkit-filter 0.2s ease;
+    z-index: 0;
+
+    -webkit-filter: saturate(0%);
+    filter: saturate(0%);
+
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+.gallery li::before, .gallery li::after {
+    pointer-events: none;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+}
+
+.gallery li::after {
+    background-color: #FFFF00;
+    mix-blend-mode: darken;
+    opacity: 1;
+    z-index: 5;
+}
+
+.gallery li:hover img {
+    -webkit-filter: saturate(100%);
+    filter: saturate(100%);
+}
+
+.gallery li:hover::before, .gallery li:hover::after {
+    opacity: 0;
+}
+
+.normalImage {
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+    .normalImage {
+        margin-top: 0;
+    }
+}
+
+.normalImage img {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+.decorate-font {
+    font-family: "Futura PT Medium", sans-serif;
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+@media only screen and (min-width: 768px) {
+    .decorate-font {
+        top: calc((100% / 3) * 1.75);
+        font-size: 5vw;
+        letter-spacing: 0.2em;
+    }
+
+    .decorate-font:not(:last-of-type) {
+        right: 20vw;
+        color: white;
+        z-index: 11 !important;
+    }
+
+    .decorate-font:last-of-type {
+        right: 19.6vw;
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .decorate-font {
+        display: none;
+    }
+}
+
+.instruction {
+    font-family: "Futura PT Medium Oblique", sans-serif;
+    color: black;
+    text-align: center;
+
+    margin: 60px 10% 0 10%;
+}
+
+.instruction span {
+    font-family: "Futura PT Heavy Oblique", sans-serif;
+}
+
+.timeline-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 35px;
+}
+
+.line {
+    position: absolute;
+    left: calc(50% - 4px);
+    background-color: black;
+    height: 100%;
+    width: 8px;
+}
+
+.timeline-mark {
+    position: absolute;
+    left: calc(50% - 27px);
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 8px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+
+.timeline-sub-mark {
+    position: absolute;
+    left: calc(50% - 9.5px);
+    margin-top: 12px;
+    background-color: black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.extra-sub-mark {
+    margin-top: 27px !important;
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .line {
+        left: 15vw;
+        width: 6px;
+    }
+
+    .timeline-mark {
+        width: 44px;
+        height: 44px;
+        left: calc(15vw - 20px);
+    }
+
+    .timeline-sub-mark {
+        left: calc(15vw - 7px);
+        margin-top: 16px;
+    }
+
+    .extra-sub-mark {
+        display: block;
+    }
+}
+
+.mark-bottom {
+    bottom: 0;
+}
+
+.story-container {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.story-container:not(:last-of-type) {
+    margin-bottom: 3vw;
+}
+
+.story-container:last-of-type {
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 991px) {
+    .story-container:not(:last-of-type) {
+        margin-bottom: 10vw;
+    }
+}
+
+.timeline-story h2 {
+    font-size: 35px;
+    font-family: "Futura PT Demibold Oblique", sans-serif;
+    color: black;
+}
+
+.timeline-story p {
+    font-size: 22px;
+    font-family: "Futura PT Book Oblique", sans-serif;
+    color: black;
+    text-align: justify;
+}
+
+@media only screen and (min-width: 992px) {
+    .timeline-story h2 {
+        margin-bottom: 20px;
+    }
+
+    .timeline-story p {
+        margin-bottom: 30px;
+    }
+}
+
+.even-timeline {
+    color: gray !important;
+}
+
+.timeline-year h2 {
+    font-size: 45px;
+    font-family: "Futura PT Demibold", sans-serif;
+    color: black;
+}
+
+.timeline-story a {
+    cursor: pointer;
+}
+
+.timeline-story a:hover {
+    text-decoration: none;
+}
+
+.timeline-story a h2:hover {
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+.left {
+    text-align: right;
+    float: left;
+    width: 30vw;
+    margin-left: 15%;
+    display: inline;
+}
+
+.right {
+    float: left;
+    text-align: left;
+    width: 30vw;
+    margin-left: 10vw;
+    display: inline;
+}
+
+@media only screen and (min-width: 992px) {
+    .timeline-story h2:first-of-type {
+        margin-top: 0;
+    }
+
+    .timeline-year h2:first-of-type {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .timeline-story h2 {
+        font-size: 30px;
+    }
+
+    .timeline-year h2 {
+        font-size: 40px;
+    }
+
+    .resp-story {
+        width: auto;
+        margin-left: 25vw;
+        margin-right: 15%;
+        text-align: left;
+    }
+
+    .full-year {
+        display: none;
+    }
+}
+
+.resp-year h2 {
+    margin: 0;
+}
+
+.resp-year {
+    width: auto;
+    margin-left: 25vw;
+    margin-right: 15%;
+    text-align: left;
+}
+
+@media only screen and (min-width: 992px) {
+    .resp-year {
+        display: none;
+    }
+}
+
+.sponser-container {
+    position: relative;
+    overflow: hidden;
+    margin: 110px 0;
+}
+
+.life-container {
+    position: relative;
+}
+
+.jap-font h2 {
+    font-family: "Kozuka Gothic Pr6N H", sans-serif !important;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 991px) {
+    .jap-font h2 {
+        margin: 0;
+        font-size: 38px;
+    }
+    .sponser-container {
+        margin: 50px 0;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .sponser-container {
+        margin: 30px 0;
+    }
+}
+
+
+#life-power-container {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 10;
+}
+
+#life-power {
+    position: relative;
+    left: -50%;
+}
+
+#life-power-container h2 {
+    font-family: "Futura PT Medium", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 0.15em;
+
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+@media only screen and (max-width: 767px) {
+    #life-power-container h2 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #life-power-container h2 {
+        letter-spacing: normal;
+    }
+}
+
+.titleBG {
+    position: absolute;
+    background-color: white;
+    height: 0.7em;
+    left: 0;
+    bottom: 20%;
+    right: 0;
+    z-index: -1;
+}
+
+.sponser-gallery {
+    border-style: solid;
+    border-width: 6px;
+    margin: 100px 15% 0 15%;
+}
+
+.sponser-gallery div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponser-gallery img {
+    position: relative;
+    width: auto;
+    height: 9vw;
+
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+@media only screen and (max-width: 767px) {
+    .sponser-gallery {
+        margin-top: 80px;
+        border-width: 4px;
+    }
+}
+
+.upper-sponser {
+    padding: 5% 20% 5% 20%;
+}
+
+.below-sponser {
+    padding: 0 20% 5% 20%;
+}
+
+footer .glyphicon {
+    font-size: 40px;
+    margin-bottom: 2vw;
+    color: black;
+}
+
+
+/*------------------------------*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 15; /* Sit on top */
+    padding-top: calc(50vh - 375px); /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255,255,0); /* Fallback color */
+    background-color: rgba(255,255,0,0.9); /* Black w/ opacity */
+}
+
+@media only screen and (min-width: 788px) and (max-width: 1250px) {
+    .modal {
+        padding-top: 0;
+        /* padding-top: calc(50vh - 30vw); */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .modal {
+        padding-top: calc(50vh - 37.5vw);
+    }
+}
+  
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100vh;
+    z-index: -1;
+}
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+/*   #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  } */
+  
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+  
+/* The Close Button */
+/* .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    opacity: 0.5;
+
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    transform-origin: 50% 60%;
+}
+  
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 1;
+
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    
+} */
+
+#exit-Container {
+    font-size: 30px;
+}
+
+#exit-Container span {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: black;
+    cursor: pointer;
+
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}   
+
+#exit-Container span:hover {
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+  
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 767px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.prev {
+    border-radius: 0 10px 10px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.pad0 {
+    padding: 0;
+}

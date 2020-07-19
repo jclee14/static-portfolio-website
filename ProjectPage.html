@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>J.C. Lee | Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="assets/fonts/bebas-neue-cufonfonts-webfont/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="assets/fonts/futura-condensed-pt-cufonfonts-webfont/style.css" type="text/css" charset="utf-8" />
+
+    <link rel="stylesheet" href="assets/css/ProjectPage.css">
+</head>
+
+<body id="myPage">
+    <div class="container-fluid containerPad">
+        <nav id="mainNav" class="navbar navbar-default noselect">
+            <div class="container-fluid menu-padding">
+                <div class="navbar-header">
+                    <button id="navBTN" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">JC</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="AboutPage.html"><span>About</span></a></li>
+                        <li><a href="ProjectPage.html" class="active-nav"><span class="active-nav-bg">Projects</span></a></li>
+                        <li><a href="AchievementPage.html"><span>Achievement</span></a></li>
+                        <li><a href="ContactPage.html"><span>Contact</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="overbg"></div>
+        
+        <video autoplay muted loop id="bgVideo" class="noselect">
+            <source src="assets/video/Reel_forWeb.mp4" type="video/mp4">
+        </video>
+
+        <div class="bg-image">
+            <img src="assets/img/ProjectPage_bg.jpg" alt="Background Image">
+        </div>
+
+        <div class="opa-bottom">
+            <div class="pDirection-container">
+                <div class="pDirection">
+                    <a href="#portfolioFilter">
+                            <h3>Project Collections</h3>
+                            <span class="glyphicon glyphicon-chevron-down"></span>                        
+                    </a>                    
+                </div>
+            </div>
+        </div>
+
+        <div id="instruction" class="noselect">
+            <h5>Select Any Desired Project</h5>
+        </div>
+
+        <div id="portfolioFilter" class="noselect">
+            <a id="all-btn" class="active-btn"><span class="inlineB-span">All Projects</span></a>
+            <a id="game-btn"><span class="inlineB-span">Interactive Games</a></span>            
+            <a id="3d-animation-btn"><span class="inlineB-span">3D Animations</span></a>
+            <a id="2d-animation-btn"><span class="inlineB-span">2D Animations</span></a>
+            <a id="film-btn">Films</a>
+
+        </div>
+
+        <div id="projectList">
+            <div class="project 3d-animation-project">
+                <div class="project-cover">
+                    <div class="project-filter"></div>
+                    <a href="InfoPage_TheLastIngredient.html"><img src="assets/img/ProjectCover/Cover_TheLastIngredient.jpg" alt="The Last Ingredient Cover"></a>
+                </div>
+
+                <div class="projectName">
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> The Last</span> Ingredient</span></h2>
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> 3d Ani</span>mation</span></h2>  
+                </div>
+            </div>
+
+            <div class="project 2d-animation-project">
+                    <div class="project-cover">
+                        <div class="project-filter"></div>
+                        <a href="InfoPage_DentalMusic.html"><img src="assets/img/ProjectCover/Cover_dent1.jpg" alt="Dental Animation Cover"></a>
+                    </div>
+                    <div class="projectName">
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> Dental Mu</span>sic Video</span></h2>
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> 2d Ani</span>mation</span></h2>  
+                    </div>
+            </div>
+
+            <div class="project 3d-animation-project">
+                    <div class="project-cover">
+                        <div class="project-filter"></div>
+                        <a href="InfoPage_Friend.html"><img src="assets/img/ProjectCover/Cover_friend.jpg" alt="Fri(end) Cover"></a>
+                    </div>
+                    <div class="projectName">
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> Fri(end)</span></span></h2>
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> 3d Ani</span>mation</span></h2>  
+                    </div>
+            </div>
+
+            <div class="project game-project">
+                <div class="project-cover">
+                    <div class="project-filter"></div>
+                    <a href="InfoPage_SBIDU.html"><img src="assets/img/ProjectCover/Cover_SBIDU.jpg" alt="SBIDU Cover"></a>
+                </div>
+                <div class="projectName">
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> SBIDU Game</span></span></h2>
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> Interac</span>tive Game</span></h2>  
+                </div>
+            </div>
+
+            <div class="project game-project">
+                <div class="project-cover">
+                    <div class="project-filter"></div>
+                    <a href="InfoPage_PoopTower.html"><img src="assets/img/ProjectCover/Cover_PoopTower.jpg" alt="Poop Tower Cover"></a>
+                </div>
+
+                <div class="projectName">
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> Poop Tower Game</span></span></h2>
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> Interac</span>tive Game</span></h2>  
+                </div>
+            </div>
+
+            <div class="project 3d-animation-project">
+                <div class="project-cover">
+                    <div class="project-filter"></div>
+                    <a href="InfoPage_OneAndAHalf.html"><img src="assets/img/ProjectCover/Cover_OneAndHalf.jpg" alt="One and a Half Cover"></a>
+                </div>
+
+                <div class="projectName">
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> One and a</span> Half</span></h2>
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> 3d Ani</span>mation</span></h2>  
+                </div>
+            </div>
+
+            <div class="project film-project">
+                <div class="project-cover">
+                    <div class="project-filter"></div>
+                    <a href="InfoPage_TheConverse.html"><img src="assets/img/ProjectCover/Cover_Converse.jpg" alt="The Converse Cover"></a>
+                </div>
+                <div class="projectName">
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> The Con</span>verse</span></h2>
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> Film</span></span></h2>  
+                </div>
+            </div>
+
+            <div class="project 3d-animation-project">
+                    <div class="project-cover">
+                        <div class="project-filter"></div>
+                        <a href="InfoPage_Fakebook.html"><img src="assets/img/ProjectCover/Cover_FB.jpg" alt="FAKEBOOK Cover"></a>
+                    </div>
+                    <div class="projectName">
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> FAKE</span>BOOK</span></h2>
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> 3d Ani</span>mation</span></h2>  
+                    </div>
+            </div>
+
+            <div class="project film-project">
+                <div class="project-cover">
+                    <div class="project-filter"></div>
+                    <a href="InfoPage_TroubleMaker.html"><img src="assets/img/ProjectCover/Cover_TroubleMaker.jpg" alt="Trouble Maker Cover"></a>
+                </div>
+                <div class="projectName">
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> Trouble</span> Maker</span></h2>
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> Film</span></span></h2>  
+                </div>
+            </div>
+
+            <div class="project game-project">
+                <div class="project-cover">
+                    <div class="project-filter"></div>
+                    <a href="InfoPage_DoggyPoopy.html"><img src="assets/img/ProjectCover/Cover_DoggyPoopy.jpg" alt="Doggy Poopy Cover"></a>
+                </div>
+                <div class="projectName">
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> Doggy Poopy</span></span></h2>
+                    <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> Interac</span>tive Game</span></h2>  
+                </div>
+            </div>
+
+            <div class="project 2d-animation-project">
+                    <div class="project-cover">
+                        <div class="project-filter"></div>
+                        <a href="InfoPage_HealthInfo.html"><img src="assets/img/ProjectCover/Cover_Health.jpg" alt="Health Care Animation Cover"></a>
+                    </div>
+                    <div class="projectName">
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> Health Care</span> Infographic</span></h2>
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> 2d Ani</span>mation</span></h2>  
+                    </div>
+            </div>
+
+            <div class="project 3d-animation-project">
+                    <div class="project-cover">
+                        <div class="project-filter"></div>
+                        <a href="InfoPage_AntiVirus.html"><img src="assets/img/ProjectCover/Cover_AntiVirus.jpg" alt="Anti-Virus Cover"></a>
+                    </div>
+                    <div class="projectName">
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> Anti-Virus</span></span></h2>
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> 3d Ani</span>mation</span></h2>  
+                    </div>
+            </div>
+
+            <div class="project film-project">
+                    <div class="project-cover">
+                        <div class="project-filter"></div>
+                        <a href="InfoPage_HarryPotter.html"><img src="assets/img/ProjectCover/Cover_Harry.jpg" alt="Harry Potter Cover"></a>
+                    </div>
+                    <div class="projectName">
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> Harry Potter</span> and Elder</span></h2>
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> Film</span></span></h2>  
+                    </div>
+            </div>
+
+            <div class="project 3d-animation-project">
+                    <div class="project-cover">
+                        <div class="project-filter"></div>
+                        <a href="InfoPage_WindUpHeart.html"><img src="assets/img/ProjectCover/Cover_wind.jpg" alt="Wind-Up Animation Cover"></a>
+                    </div>
+                    <div class="projectName">
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> Wind-Up</span> Heart</span></h2>
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> 3d Ani</span>mation</span></h2>  
+                    </div>
+            </div>
+
+            <div class="project film-project">
+                    <div class="project-cover">
+                        <div class="project-filter"></div>
+                        <a href="InfoPage_CMYK.html"><img src="assets/img/ProjectCover/Cover_CMYK.jpg" alt="CMYK Cover"></a>
+                    </div>
+                    <div class="projectName">
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> CMYK</span></span></h2>
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> Film</span></span></h2>  
+                    </div>
+            </div>
+
+            <div class="project 3d-animation-project">
+                    <div class="project-cover">
+                        <div class="project-filter"></div>
+                        <a href="InfoPage_Robo.html"><img src="assets/img/ProjectCover/Cover_Robo.jpg" alt="ROxBO Cover"></a>
+                    </div>
+                    <div class="projectName">
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> RO x BO</span></span></h2>
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> 3d Ani</span>mation</span></h2>  
+                    </div>
+            </div>
+
+            <div class="project 3d-animation-project">
+                    <div class="project-cover">
+                        <div class="project-filter"></div>
+                        <a href="InfoPage_GodPresident.html"><img src="assets/img/ProjectCover/Cover_god.jpg" alt="God Animation Cover"></a>
+                    </div>
+                    <div class="projectName">
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Project:</span> God Pr</span>esident</span></h2>
+                        <h2><span class="allTextBG"><span class="textBG"><span class="topic">Genre:</span> 3d Ani</span>mation</span></h2>  
+                    </div>
+            </div>
+
+            <footer class="container-fluid text-center">
+                <a href="#myPage" title="To Top">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </a>
+            </footer>
+        </div>
+    </div>
+
+<script>
+    $(document).ready(function(){
+        $(".navbar-toggle").click(function() {
+            $(this).toggleClass("toggleColor");
+            if( $(this).hasClass("toggleColor") ) {
+                $(".navbar-toggle:focus").css("background-color", "black");
+            }
+            $("#overbg").toggleClass("overlay-bg");
+        });
+
+        // Add smooth scrolling to project direction and footer
+        $(".pDirection a, footer a[href='#myPage']").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== ""){
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    /* window.location.hash = hash; */
+                });
+            } // End if
+        });
+
+        //Categories Button
+        /-Button-/
+        var btnContainer = document.getElementById("portfolioFilter");
+        var btns = btnContainer.getElementsByTagName("A");
+        var aBTN = document.getElementById("all-btn");
+        var dddBTN = document.getElementById("3d-animation-btn");
+        var fBTN = document.getElementById("film-btn");
+        var ddBTN = document.getElementById("2d-animation-btn");
+        var gmBTN = document.getElementById("game-btn");
+
+        /-Project-/
+        var proj = document.getElementsByClassName("project");
+        var dddProj = document.getElementsByClassName("3d-animation-project");
+        var ddProj = document.getElementsByClassName("2d-animation-project");
+        var fProj = document.getElementsByClassName("film-project");
+        var gProj = document.getElementsByClassName("game-project");
+
+        dddBTN.onclick = function() {
+            addClassActive(dddBTN);
+            addClassHide(dddProj);
+        }
+
+        ddBTN.onclick = function() {
+            addClassActive(ddBTN);
+            addClassHide(ddProj);
+        }
+
+        fBTN.onclick = function() {
+            addClassActive(fBTN);
+            addClassHide(fProj);
+        }
+
+        aBTN.onclick = function () {
+            addClassActive(aBTN);
+            addClassHide(proj);
+        }
+
+        gmBTN.onclick = function () {
+            addClassActive(gmBTN);
+            addClassHide(gProj);
+        }
+
+        function addClassHide(element) {
+            var i,j;
+
+            if(element !== proj)
+            {
+                for(j=0 ; j<proj.length ; j++)
+                {
+                    proj[j].classList.add("pro-hide");
+                }
+            }
+            for(i=0 ; i<element.length ; i++)
+            {
+                element[i].classList.remove("pro-hide");
+            }
+        }
+
+        function addClassActive(atBTN) {
+            var k;
+
+            for(k=0 ; k<btns.length ; k++)
+            {
+                btns[k].classList.remove("active-btn");
+            }
+
+            atBTN.classList.add("active-btn");
+        }
+
+        //remove project's cover filter when hover on image
+        var projList = document.getElementById("projectList");
+        var projCv = projList.getElementsByTagName("IMG");
+        var projFt = projList.getElementsByClassName("project-filter");
+        var proCount;
+
+        $(".project-cover img").mouseover(function() {
+            $(this).parent().siblings(".project-filter").css("opacity", "0");
+            $(this).css({"filter":"saturate(100%)", "-webkit-filter":"saturate(100%)"});
+        });
+        $(".project-cover img").mouseout(function() {
+            $(this).parent().siblings(".project-filter").css("opacity", "1");
+            $(this).css({"filter":"saturate(0%)", "-webkit-filter":"saturate(0%)"});
+
+        });
+    })
+
+</script>
+
+</body>
+
+</html>

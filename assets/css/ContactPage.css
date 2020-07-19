@@ -1,0 +1,232 @@
+body {
+    background-color: #FFFF00;
+}
+
+nav {
+    z-index: 5;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    padding: 50px 100px;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-default {
+        padding: 50px 15%;
+    }
+}
+
+.nav.navbar-nav li a {
+    color:black;
+    font-family: "Futura PT Bold Oblique", sans-serif;
+    font-size: 2.2vw;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav.navbar-nav li a {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1136px) {
+    .nav.navbar-nav li a {
+        font-size: 25px;
+    }
+}
+
+.navbar-header a {
+    color:black !important;
+    font-family: "Futura PT Bold Oblique", sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 767px) {
+    #myNavbar {
+        border: none;
+        float: right;
+        text-align: right;
+    }
+}
+
+.navbar-brand {
+    padding-left: 0;
+}
+
+.navbar-brand:hover {
+    text-shadow: 3px 3px white;
+}
+
+.navbar-toggle {
+    background-color: black;
+    border: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.eyeColor {
+    background-color: black;
+    color: white;
+}
+
+.navbar-toggle:hover {
+    background-color: orange !important;
+}
+
+#myNavbar li a:before{
+    content: '';
+    width: 0px;
+    position: absolute;
+    border-bottom: 5px solid #313131;
+    bottom: 0;
+    transition: 0.5s all;
+  }
+
+#myNavbar li a:hover:before{
+    width: 30px;
+}
+
+.active-nav {
+    color: white !important;
+    text-shadow: 3px 3px black;
+}
+
+@media only screen and (max-width: 767px) {
+    .active-nav {
+        color: white !important;
+        text-shadow: none;
+    }
+    .active-nav-bg {
+        background-color: black !important;
+    }
+    .nav.navbar-nav li a span {
+        background-color: white;
+    }
+}
+
+.bg-container {
+    position: absolute;
+    bottom: 0;
+}
+
+.topic {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: -10%;
+}
+
+.topic h1 {
+    position: relative;
+    font-family: "Futura PT Bold", sans-serif;
+    font-size: 100px;
+    z-index: 1;
+    letter-spacing: 5vw;
+    text-shadow: 4px 4px white;
+}
+
+@media only screen and (min-width: 1200px) {
+    .topic {
+        top: -15%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .topic {
+        top: 15%;
+    }
+    .topic h1 {
+        color: #FFFF00;
+        text-shadow: 4px 4px black;
+    }
+}
+
+.bg {
+    background-image: url("../img/contact_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    max-height: 70vh;
+    padding: 25vh 0;
+
+}
+
+h2 {
+    font-family: "Futura PT Medium",sans-serif;
+    color: #FFFF00;
+    text-align: center;
+    font-size: 50px;
+}
+
+@media only screen and (min-width: 1201px) and (max-height: 600px) {
+    .topic h1 {
+        font-size: 15vh;
+        letter-spacing: 8vh;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .topic {
+        display: none;
+    }
+
+    .bg {
+        max-height: 100vh;
+        padding: 50vh 0;
+    }
+
+    h2 {
+        margin: 0;
+    }
+}
+
+a:hover {
+    color: #FFFF00;
+}
+
+@media only screen and (max-width: 1200px) {
+    .topic h1 {
+        font-size: 8.33vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-height: 750px) {
+    .bg-container {
+        bottom: 10vh;
+    }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 992px) and (min-height: 750px) {
+    .bg-container {
+        bottom: 8vh;
+    }
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.pad0 {
+    padding: 0;
+}

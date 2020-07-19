@@ -1,0 +1,559 @@
+body {
+    background-color: #FFFF00;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#bgVideo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 100%; 
+    min-height: auto;
+    width: 100%; 
+    height: auto;
+    z-index: -1;
+}
+
+.abPosition {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+#ytplayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.ytContainer {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.bg-image {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.bg-image img {
+    min-width: 100%; 
+    min-height: auto;
+    width: 100%; 
+    height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    #bgVideo {
+        display: none;
+    }
+
+    .abPosition {
+        display: none;
+    }
+
+    .bg-image {
+        display: block;
+    }
+}
+
+.opa-bottom {
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 100%; 
+    height: calc(100vw * 0.5625);
+    background: linear-gradient( rgba(255,255,0,1) 0%, rgba(255,255,0,0) 20%, rgba(255,255,0,0) 60%, rgba(255,255,0,0) 75%, rgba(255,255,0,1) 95% );
+}
+
+#mainNav {
+    z-index: 5;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    padding: 50px 100px;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-default {
+        padding: 50px 15% 30px;
+    }
+}
+
+.nav.navbar-nav li a {
+    color:black;
+    font-family: "Futura PT Bold Oblique", sans-serif;
+    font-size: 2.2vw;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav.navbar-nav li a {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1136px) {
+    .nav.navbar-nav li a {
+        font-size: 25px;
+    }
+}
+
+.navbar-header a {
+    color:black !important;
+    font-family: "Futura PT Bold Oblique", sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+}
+
+#myNavbar {
+    border: none;
+}
+
+@media only screen and (max-width: 767px) {
+    #myNavbar {
+        position: absolute;
+        right: 15%;
+        text-align: right;
+    }
+}
+
+.navbar-brand {
+    padding-left: 0;
+}
+
+.navbar-brand:hover {
+    text-shadow: 3px 3px white;
+}
+
+.navbar-toggle {
+    background-color: black;
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.toggleColor {
+    background-color: black;
+    color: white;
+}
+
+.navbar-toggle:hover {
+    background-color: orange !important;
+}
+
+#myNavbar li a:before{
+    content: '';
+    width: 0px;
+    position: absolute;
+    border-bottom: 5px solid #313131;
+    bottom: 0;
+    transition: 0.5s all;
+}
+
+#myNavbar li a:hover:before{
+    width: 30px;
+}
+
+.active-nav {
+    color: white !important;
+    text-shadow: 3px 3px black;
+}
+
+@media only screen and (max-width: 767px) {
+    .active-nav {
+        color: white !important;
+        text-shadow: none;
+    }
+    .active-nav-bg {
+        background-color: black !important;
+    }
+    .nav.navbar-nav li a span {
+        background-color: white;
+    }
+}
+
+.menu-padding {
+    padding: 0;
+}
+
+.pDirection-container {
+    position: absolute;
+    /* top: calc(((100vw * 9) / 16) - 300px); */
+    bottom: 10vw;
+    left: 50%;
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+    z-index: 1;
+}
+
+.pDirection {
+    position: relative;
+    left: -50%;
+}
+
+.pDirection a {
+    display: inline;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pDirection h3 {
+    font-family: "Futura PT Bold", sans-serif;
+    font-size: 3vw;
+    opacity: 0.6;
+}
+
+.pDirection span {
+    font-size: 2vw;
+    color: white;
+}
+
+.pDirection a:link {
+    color: white;
+    opacity: 0.6;
+}
+
+.pDirection a:hover {
+    text-shadow: 4px 4px black;
+    opacity: 1;
+}
+
+.pDirection h3:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 991px) {
+    .pDirection {
+        display: none;
+    }
+}
+
+#instruction {
+    position: relative;
+}
+
+#instruction h5 {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-family: "Futura Pt Demibold Oblique", sans-serif;
+    color: black;
+    position: fixed;
+    top: calc(50% - 111px);
+    left: 5%;
+    transform: rotate(180deg);
+    margin: 0;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+    #instruction h5 {
+        font-size: 15px;
+        top: calc(50% - 84px);
+        left: 3%;
+    }
+}
+
+#projectList {
+    top: 0;
+}
+
+.project {
+    position: relative;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 991px) {
+    .project {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .project {
+        margin-bottom: 20px;
+    }
+}
+
+.project-cover {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-cover img {
+    width: 50%;
+    height: auto;
+
+    -webkit-transition: -webkit-filter 0.3s ease;
+    transition: -webkit-filter 0.3s ease;
+    transition: filter 0.3s ease;
+    transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+    z-index: 0;
+
+    -webkit-filter: saturate(0%);
+    filter: saturate(0%);
+
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+/* .project-cover a:hover img {
+    -webkit-filter: saturate(100%);
+    filter: saturate(100%);
+} */
+
+.project-filter {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    z-index: 1;
+    background-color: #FFFF00;
+    mix-blend-mode: darken;
+    margin: 0 auto;
+
+    -webkit-transition: -webkit-opacity 0.3s ease;
+    transition: -webkit-opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, -webkit-opacity 0.3s ease;
+}
+
+@media only screen and (max-width: 991px) {
+    .project-cover img {
+        width: 75%;
+    }
+    .project-filter {
+        width: 75%;
+    }
+}
+
+/* .project-cover a::before, .project-cover a::after {
+    pointer-events: none;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease;
+}
+
+.project-cover a::after {
+    background-color: #FFFF00;
+    mix-blend-mode: color;
+    opacity: 1;
+    z-index: 2;
+}
+
+.project-cover a:hover::before, .project-cover a:hover::after {
+    opacity: 0;
+}
+ */
+/******************/
+
+.projectName {
+    pointer-events: none;
+    position: absolute;
+    text-align: left;
+    bottom: 10%;
+    left: 65%;
+    z-index: 3;
+}
+
+.projectName h2 {
+    color: black;
+    font-family: "Futura Pt Medium Oblique", sans-serif;
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 991px) {
+    .projectName {
+        left: 17%;
+        bottom: 5%;
+    }
+    .projectName h2 {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .projectName {
+        bottom: 0;
+    }
+    .projectName h2 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+}
+
+.topic {
+    font-family: "Futura Pt Heavy Oblique", sans-serif;
+}
+
+.textBG {
+    background-color: transparent;
+}
+
+.allTextBG {
+    background-color: white;
+}
+
+@media only screen and (min-width: 992px) {
+    .textBG {
+        background-color: white;
+    }
+    .allTextBG {
+        background-color: transparent;
+    }
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.pro-hide {
+    display: none;
+}
+
+#portfolioFilter {
+    position: relative;
+    text-align: center;
+    margin-top: calc((((100vw * 9) / 16) - 150px));
+    margin-bottom: 70px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 991px) {
+    #portfolioFilter {
+        margin-top: calc((((100vw * 9) / 16) - 100px));
+        margin-bottom: 5vw;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #portfolioFilter {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+#portfolioFilter a {
+    color: black;
+    font-family: "Futura PT Demibold Oblique", sans-serif;
+    font-size: 25px;
+    padding: 0 2vw;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+#portfolioFilter a:hover {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+@media only screen and (max-width: 991px) {
+    #portfolioFilter a {
+        padding: 0 10px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    #portfolioFilter a {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #portfolioFilter a {
+        font-size: 16px;
+        padding: 0 5px;
+        line-height: 35px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #portfolioFilter a:before{
+        content: '';
+        width: 0px;
+        position: absolute;
+        border-bottom: 4px solid #313131;
+        bottom: 0;
+        transition: 0.5s all;
+    }
+
+    #portfolioFilter a:hover:before{
+        width: 30px;
+    }
+}
+
+
+
+.active-btn {
+    text-shadow: 2px 2px white;
+}
+
+.inlineB-span {
+    display: inline-block;
+}
+
+.containerPad {
+    padding: 0;
+}
+
+footer .glyphicon {
+    font-size: 40px;
+    margin-bottom: 2vw;
+    color: black;
+}
+
+@media only screen and (max-width: 767px) {
+    .overlay-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+/*         background-color: #FFFF00; */
+background: linear-gradient( rgba(255,255,0,1) 0%, rgba(255,255,0,0.7) 50%,  rgba(255,255,0,0) 80% );
+        width: 100%;
+        height: 100vh;
+/*         opacity: 0.9; */
+        z-index: 4;
+/*         -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out; */
+    }
+}
